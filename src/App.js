@@ -10,6 +10,7 @@ import {
 import Home from './Pages/Home/Home/Home';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import Header from './Pages/Header/Header/Header';
+import Footer from './Pages/Footer/Footer';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <PageNotFound></PageNotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
