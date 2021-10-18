@@ -11,9 +11,9 @@ const Footer = () => {
                         <p className="my-4 text-gray-400  text-sm">Veniam Sequi molestias aut necessitatibus optio magni at natus accusamus.Lorem ipsum dolor sit amet, consectetur adipisicin gelit, sed do eiusmod tempor incididunt .</p>
                         <div className="text-gray-400 text-xs">
                             
-                            <SocialIcon network="facebook" bgColor="#ffffff" className="mx-2"/>
-                            <SocialIcon network="linkedin" bgColor="#ffffff" className="mx-2"/>
-                            <SocialIcon network="google" bgColor="#ffffff" className="mx-2" />
+                            <SocialIcon network="facebook"  bgColor="#ffffff" className="mx-2"/>
+                            <SocialIcon network="linkedin"  bgColor="#ffffff" className="mx-2"/>
+                            <SocialIcon network="google"    bgColor="#ffffff" className="mx-2" />
                             <SocialIcon network="pinterest" bgColor="#ffffff" className="" />
                                 
                             </div>

@@ -15,6 +15,7 @@ const Header = () => {
                         <li className="nav-list-item text-indigo-900 p-4 mx-4"><NavLink to="/about">About</NavLink></li>
                         <li className="nav-list-item text-indigo-900 p-4 mx-4"><NavLink to="/services">Courses</NavLink></li>
                         <li className="nav-list-item text-indigo-900 p-4 mx-4"><NavLink to="/contact">Contact</NavLink></li>
+                        <li className="nav-list-item text-indigo-900 p-4 mx-4"><NavLink to="/login">Login</NavLink></li>
                     </ul>
                 </div>
             </div>
