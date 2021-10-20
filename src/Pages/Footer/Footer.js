@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 const Footer = () => {
     return (
         <div className="bg-gray-800">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-12">
                 <div className="flex text-white justify-between py-8">
                     <div  className="flex-1 mx-4">
                         <h2 className="text-lg font-bold">About Us</h2>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div  className="text-gray-50"><hr/></div>
             
-            <div className="container mx-auto">
+            <div className="container mx-auto px-12">
             <div className="flex justify-between ">
                     <div className="brand-logo font-bold text-3xl flex p-2">
                         <h2 className="text-yellow-400"><span className="text-blue-500 text-4xl">Medi</span>care</h2>

@@ -76,18 +76,18 @@ const handleRegistration= e=>{
     return (
         <div>
             <div className="mt-24 ">
-            <div className=" bg-cover mix-blend-multiply bg-amber-300 ">
-                <img className="w-full" src="../../3.png" alt=""/>
+                <div className=" bg-cover mix-blend-multiply bg-amber-300 ">
+                    <img className="w-full" src="../../3.png" alt=""/>
+                </div>
+                <div className="relative right-10 -top-40 left-0 bottom-0">
+                    <h2 className=" text-center text-5xl text-white font-bold">Contact</h2>
+                </div>
             </div>
-            <div className="relative right-10 -top-40 left-0 bottom-0">
-            <h2 className=" text-center text-5xl text-white font-bold">Contact</h2>
-            </div>
-        </div>
-        <div className="container mx-auto mx-2 mt-12">
+            <div className="container mx-auto mx-2 mt-12">
                 <div className="grid grid-cols-3 gap-8 overflow-hidden ">
                     <div className="flex bg-gray-200 p-4 rounded-md">
                         <div className="mx-2">
-                            <h4 className="bg-yellow-400 rounded-full text-2xl h-20 w-20 p-5 "><FontAwesomeIcon icon={faPhone} /></h4>
+                            <h4 className="bg-blue-400 rounded-full text-2xl h-20 w-20 p-5 "><FontAwesomeIcon icon={faPhone} /></h4>
                         </div>
                         <div className="p-4">
                             <h3 className="font-bold text-lg text-indigo-900">Our Phone</h3>
@@ -96,7 +96,7 @@ const handleRegistration= e=>{
                     </div>
                     <div className="flex bg-gray-200 p-4 rounded-md">
                         <div className="mx-2">
-                            <h4 className="bg-yellow-400 text-2xl rounded-full h-20 w-20 p-5 "><FontAwesomeIcon icon={faEnvelope} /></h4>
+                            <h4 className="bg-blue-400 text-2xl rounded-full h-20 w-20 p-5 "><FontAwesomeIcon icon={faEnvelope} /></h4>
                         </div>
                         <div className="p-4">
                             <h3 className="font-bold text-lg text-indigo-900">Our Email</h3>
@@ -105,7 +105,7 @@ const handleRegistration= e=>{
                     </div>
                     <div className="flex bg-gray-200 p-4 rounded-md">
                         <div className="mx-2">
-                            <h4 className="bg-yellow-400 text-2xl rounded-full h-20 w-20 p-5 "><FontAwesomeIcon icon={faAddressCard} /></h4>
+                            <h4 className="bg-blue-400 text-2xl rounded-full h-20 w-20 p-5 "><FontAwesomeIcon icon={faAddressCard} /></h4>
                         </div>
                         <div className="p-4">
                             <h3 className="font-bold text-lg text-indigo-900">Our Address</h3>
@@ -117,8 +117,8 @@ const handleRegistration= e=>{
                 
                     <div className="flex-1 h-20 w-72 mt-16">
                         <span className="uppercase  font-bold text-sm text-gray-600">Get In Touch---</span>
-                        <h3 className="text-4xl uppercasr font-black text-indigo-900  my-4">Write Us a Message</h3>
-                        <p className="my-8 text-gray-600 text-sm text-justify">The quick, brown fox jumps over a lazy dog. The quick, brown fox jumps over a lazy dog, The quick, brown fox jumps over a lazy dog</p>
+                        <h3 className="text-4xl uppercasr font-black text-blue-500  my-4">Write Us a Message</h3>
+                        <p className="my-8 text-gray-600 text-sm text-justify">Being in control of your life and having realistic expectations about your day-to-day challenges are the keys to stress management</p>
                         
                     </div>
                     <form onSubmit={handleRegistration} className="flex-1 bg-gray-50 mt-5 mx-8">
