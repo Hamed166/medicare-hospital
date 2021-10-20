@@ -2,9 +2,9 @@
 
 This project was built with [Create React App](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-Hamed166).
 
-## The reason to use thi  Medicare Site
+## The reason to use this  Medicare Site
 
-- [ Medilink is a react built theme for medical institutions, clinics, hospitals, and health-oriented organizations. It is a theme that’s designed specifically for the use by medical websites.]
+- [ MediCare is a react built theme for medical institutions, clinics, hospitals, and health-oriented organizations. It is a theme that’s designed specifically for the use by medical websites.]
  - [You’ll find that MediCare gives you ample freedom to talk about your health organization in a way that leaves no questions in patients’ minds.]
  - [***Creating a medical website should always be about giving patients what they need. One of the ways that MediCare achieves this is through a design that focuses on health-related needs.*** ]
   - [Two primary features of MediCare are the Doctors Time Table & Schedule Page. And also, a Quick Doctor Appointment Page.]
