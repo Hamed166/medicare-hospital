@@ -51,7 +51,7 @@ const Footer = () => {
             <div className="container mx-auto">
             <div className="flex justify-between ">
                     <div className="brand-logo font-bold text-3xl flex p-2">
-                        <h2 className="text-red-300"><span className="text-blue-400 text-4xl">Medi</span>care</h2>
+                        <h2 className="text-yellow-400"><span className="text-blue-500 text-4xl">Medi</span>care</h2>
                     </div>
                     <div> <p className="p-4 text-gray-400">@ Copyright reserved to PHero.Team Crafted by <span className="text-yellow-400">react-hero</span></p></div>
                 </div>

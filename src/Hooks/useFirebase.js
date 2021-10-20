@@ -6,17 +6,20 @@ import firebaseInitialize from "../Pages/Login/Firebase/Firebase.init";
 
 const useFirebase =()=>{
     const [user, setUser]= useState({});
-    
 
+    const [isLoading, setIsLoading]= useState(true);
+    
     const auth = getAuth();
 
     const signInUsingGoogle=()=>{
         const googleProvider = new GoogleAuthProvider();
+        setIsLoading(true);
 
         signInWithPopup(auth, googleProvider)
-            .then((result) => {
+            .then(result => {
             setUser(result.user);
   })
+  .finally(()=>setIsLoading(false));
     }
     
 //observe user;s state change.............
@@ -27,18 +30,22 @@ const useFirebase =()=>{
             }else{
                 setUser({})
             }
+            setIsLoading(false);
         });
         return ()=> unsubscribed;
     },[])
 
     const logOut = ()=>{
-        setUser(auth)
-        .then(()=>{});
+        setIsLoading(true);
+        signOut(auth)
+            .then(() => { })
+            .finally(()=>setIsLoading(false));
     }
 
 
     return{
         user,
+        isLoading,
         signInUsingGoogle,
         logOut
     }
