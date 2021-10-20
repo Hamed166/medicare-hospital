@@ -1,4 +1,4 @@
-# MediLink – Health & Medical WordPress Theme
+# MediCare – Health & Medical WordPress Theme
 
 This project was built with [Create React App](https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-Hamed166).
 
