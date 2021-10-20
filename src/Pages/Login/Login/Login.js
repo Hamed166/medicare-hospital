@@ -1,16 +1,54 @@
 import React from 'react';
+import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 import useAuth from '../../../Hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react/cjs/react.development';
 
 
 
 const Login = () => {
+    const [firstname, setFirstName]= useState('');
+    const[lastname, setLastName]= useState('');
+    const [email, setEmail]= useState('');
+    const [password, setPassword]=useState('');
+    const [error, setError]= useState('')
+
+    const auth = getAuth();
+
     const {signInUsingGoogle}= useAuth();
 
+    const handleFirstNameChange= e=>{
+        setFirstName(e.target.value);
+    }
+    const handleLastNameEmailChange= e=>{
+        setLastName(e.target.value);
+    }
+    const handleEmailChange= e=>{
+        setEmail(e.target.value);
+    }
+    const handlePasswordChange= e=>{
+        setPassword(e.target.value);
+    }
 const handleRegistration= e=>{
-    console.log('registration added')
     e.preventDefault();
+    console.log(firstname, lastname, email, password)
+    if(password.length < 6){
+        setError('Your Password must be 6(six) character long')
+        return;
+    }if(!/(?=.*[A-Z].*[A-Z])/.test(password)){
+        setError('Your Password must have two uppercase letters(A-Z)')
+        return;
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+        .then(result=>{
+            const user = result.user;
+            console.log(user);
+            setError('');
+        })
+        .catch(error=>{
+            setError(error.message);
+        }) 
 }
     
     return (
@@ -67,35 +105,33 @@ const handleRegistration= e=>{
                                 <div className="grid grid-cols-2 gap-8 ">
                                 <div>
                                     <div>
-                                        <input type="text" placeholder="Fisrt Name"className=" w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md"/>
+                                        <input onBlur={handleFirstNameChange} type="text" placeholder="Fisrt Name"className=" w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md" required/>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                    <input type="text" placeholder="Last Name" className="w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md"/>
+                                    <input onBlur={handleLastNameEmailChange} type="text" placeholder="Last Name" className="w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md" required/>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                    <input type="text" placeholder="Email" className=" w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md"/>
+                                    <input onBlur={handleEmailChange} type="email" placeholder="Email" className=" w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md" required/>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="">
-                                    <input type="text" placeholder="Phone Number" className="w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md"/>
-                                    </div>
-                                </div>
-                                </div>
-
-                                <div className="mt-12 ">
                                     <div>
-                                        <textarea className="w-full h-32 border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md" placeholder="Message"></textarea>
+                                    <input onBlur={handlePasswordChange} type="password" placeholder="Password" className="w-full border-solid border-2 border-light-blue-900 outline-none p-4 rounded-md" required/>
                                     </div>
                                 </div>
-                                <div className="mt-12">
-                                    <button type="submit" name="submit" className=" bg-yellow-400 hover:bg-green-400 bg-yellow-400 py-4 px-8 rounded-md">Submit</button>
-                                </div>
-                                <button onClick={signInUsingGoogle} className="bg-blue-400 rounded p-2 mt-2">Sign in with Google</button>
+                            </div>
+                        </div>
+                        <div className="mt-2">
+                            <div className="text-lg text-red-500 mb-4">{error}</div>
+                            <button  type="submit" name="submit" className=" bg-yellow-400 hover:bg-green-400 bg-yellow-400 py-4 px-8 rounded-md">Submit</button>
+                        </div>
+                        <br/>
+                        <div>
+                            <button onClick={signInUsingGoogle} className="bg-blue-400 rounded p-2 mt-2">Sign in with Google</button>
                         </div>
                     </form>
                 </div>
