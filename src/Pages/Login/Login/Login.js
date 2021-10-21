@@ -13,11 +13,6 @@ const Login = () => {
     const [error, setError]= useState('');
     const [islogin, setIsLogin]= useState(false);
 
-    // const [email, setEmail]= useState('');
-    // const [password, setPassword]=useState('');
-    // const [error, setError]= useState('');
-    // const [islogin, setIsLogin]= useState(false)
-
     const auth = getAuth();
 
     const {signInUsingGoogle}= useAuth();

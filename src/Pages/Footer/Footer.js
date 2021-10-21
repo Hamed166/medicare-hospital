@@ -5,11 +5,11 @@ const Footer = () => {
     return (
         <div className="bg-gray-800">
             <div className="container mx-auto px-12">
-                <div className="flex text-white justify-between py-8">
-                    <div  className="flex-1 mx-4">
+                <div className= "grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-8  text-white justify-between py-8">
+                    <div  className=" mx-4">
                         <h2 className="text-lg font-bold">About Us</h2>
                         <p className="my-4 text-gray-400  text-sm">Veniam Sequi molestias aut necessitatibus optio magni at natus accusamus.Lorem ipsum dolor sit amet, consectetur adipisicin gelit, sed do eiusmod tempor incididunt .</p>
-                        <div className="text-gray-400 text-xs">
+                        <div className="text-gray-400 flex text-xl">
                             
                             <SocialIcon network="facebook"  bgColor="#ffffff" className="mx-2"/>
                             <SocialIcon network="linkedin"  bgColor="#ffffff" className="mx-2"/>
@@ -18,7 +18,7 @@ const Footer = () => {
                                 
                             </div>
                     </div>
-                    <div  className="flex-1">
+                    <div  className="">
                         <h2 className="text-lg font-bold">Company</h2>
                         <ul className="my-4 text-gray-400  text-sm leading-7">
                             <li>About Us</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                             <li>Terms and Conditions</li>
                         </ul>
                     </div>
-                    <div  className="flex-1 ">
+                    <div  className=" ">
                         <h2 className="text-lg font-bold">Courses</h2>
                         <ul className="my-4 text-gray-400  text-sm leading-7">
                             <li>Basic HTML CSS</li>
@@ -35,7 +35,7 @@ const Footer = () => {
                             <li>React</li>
                         </ul>
                     </div>
-                    <div  className="flex-1">
+                    <div  className="">
                         <h2 className="text-lg font-bold">Contact</h2>
                         <ul className="my-4 text-gray-400 text-sm leading-7">
                             <li>Phone Numbe</li>
@@ -49,7 +49,7 @@ const Footer = () => {
             <div  className="text-gray-50"><hr/></div>
             
             <div className="container mx-auto px-12">
-            <div className="flex justify-between ">
+            <div className="grid lg:grid-cols-2 grid-cols-1 justify-between ">
                     <div className="brand-logo font-bold text-3xl flex p-2">
                         <h2 className="text-yellow-400"><span className="text-blue-500 text-4xl">Medi</span>care</h2>
                     </div>

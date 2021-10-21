@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Contact = () => {
     return (
         <div>
-            <div className="mt-24">
+            <div className="mt-40">
                 <div className=" ">
-                <h2 className=" text-center text-5xl text-blue-400 font-bold">Contact Us</h2>
+                <h2 className=" text-center text-5xl text-blue-900 font-thin">Stay Connect With Us</h2>
                 </div>
             </div>
             
@@ -41,15 +41,15 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex my-16  p-4 rounded-md">
+                <div className="flex my-16 bg-yellow-50  p-4 rounded-md">
             
-                <div className="flex-1 h-20 w-72 mt-24">
+                <div className="flex-1 h-20  w-72 mt-24">
                     <span className="uppercase  font-bold text-sm text-gray-600">Get In Touch---</span>
                     <h3 className="text-4xl uppercasr font-black text-blue-600  my-4">Write Us a Message</h3>
                     <p className="my-8 text-gray-600 text-xl text-justify">Being in control of your life and having realistic expectations about your day-to-day challenges are the keys to stress management</p>
                     
                 </div>
-                <form  className="flex-1 bg-gray-50 mt-5 mx-8">
+                <form  className="flex-1 bg-gray-100 mt-5 mx-8">
                     <h2 className="text-blue-600 font-bold text-2xl mt-2">Fix an Appoinment</h2>
                     <div className="p-8">
                             <div className="grid grid-cols-2 gap-8 ">

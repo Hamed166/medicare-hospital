@@ -17,6 +17,7 @@ import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Contact from './Pages/Contact/Contact';
 import Doctors from './Pages/Home/Doctors/Doctors';
+import Blog from './Pages/Blog/Blog';
 
 
 
@@ -46,6 +47,9 @@ function App() {
               <PrivateRoute path="/serviceinfo/:serviceId">
                 <ServiceDetails></ServiceDetails>
               </PrivateRoute>
+              <Route exact path="/blog">
+                <Blog></Blog>
+              </Route>
               <Route exact path="/contact">
                 <Contact></Contact>
               </Route>
