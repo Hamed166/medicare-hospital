@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification} from "firebase/auth";
 import useAuth from '../../../Hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAddressCard, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react/cjs/react.development';
+
 
 
 
 const Login = () => {
-    
     const [email, setEmail]= useState('');
-    const [password, setPassword]=useState('');
+    const [password, setPassword]= useState('');
     const [error, setError]= useState('');
-    const [islogin, setIsLogin]= useState(false)
+    const [islogin, setIsLogin]= useState(false);
+
+    // const [email, setEmail]= useState('');
+    // const [password, setPassword]=useState('');
+    // const [error, setError]= useState('');
+    // const [islogin, setIsLogin]= useState(false)
 
     const auth = getAuth();
 
