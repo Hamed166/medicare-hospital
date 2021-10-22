@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className="bg-gray-50 mb-20">
         <h2 className="bg-gray-50 text-center text-4xl text-blue-400 p-10 font-thin my-16 uppercase">About Us</h2>
-        <div className="container mx-auto px-12 mx-2">
+        <div className="container mx-auto px-16 mx-2">
         
             <div className="grid lg:grid-cols-2 grid-cols-1">
             
@@ -23,7 +23,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className=" mx-4 ">
-                    <img className="w-full h-100" src="https://image.freepik.com/free-photo/successful-medical-team_329181-9252.jpg" alt=""/>
+                    <img className="w-full h-auto" src="https://image.freepik.com/free-photo/successful-medical-team_329181-9252.jpg" alt=""/>
                 </div>
             </div>
 
