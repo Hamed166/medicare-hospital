@@ -13,18 +13,18 @@ const Banner = () => {
             
                 <div className="grid lg:grid-cols-2 grid-cols-1 my-12">
                 
-                    <div className=" px-4 text-justify mr-16 mt-8">
+                    <div className=" px-4 text-justify mr-16">
                         <span className=" font-bold text-xl text-gray-600">Welcome to Medicenter</span>
-                        <h3 className="text-4xl text-justify text-thin my-4 mt-8"><span className="text-red-300 font-bold"> Medicare</span> holds the privilage of being Chittagong's first choice hospital to care your family</h3>
+                        <h3 className="text-4xl text-justify text-thin my-4 mt-2"><span className="text-red-300 font-bold"> Medicare</span> holds the privilage of being Chittagong's first choice hospital to care your family</h3>
                        
-                        <p className="my-4 text-gray-600 text-justify mt-4">Since its founding we become an integral part of the city, advancing our mission of providing access to compassionate care to our communities. Today patients find care that combines world-class medicine with compassion.</p>
+                        <p className="my-4 text-gray-600 text-justify mt-2">Since its founding we become an integral part of the city, advancing our mission of providing access to compassionate care to our communities. Today patients find care that combines world-class medicine with compassion.</p>
 
-                        <div className="mb-4 mt-8">
+                        <div className="mb-4 mt-2">
                         <button className="text-white text-base bg-blue-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-yellow-400 py-4 px-4 rounded-md">Fix an Appoinment</button>
                         <Link to="/services"><button className="text-white text-base my-2 mx-8 bg-yellow-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-blue-400 py-4 px-4 rounded-md">View Services</button></Link>
                         </div>
                     </div>
-                    <div className=" mx-4">
+                    <div className=" mx-4 mt-2">
                         <img className="w-full h-100" src="https://image.freepik.com/free-photo/successful-medical-team_329181-9252.jpg" alt=""/>
                     </div>
                 </div>

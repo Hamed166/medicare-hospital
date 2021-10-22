@@ -11,18 +11,18 @@ const About = () => {
         
             <div className="grid lg:grid-cols-2 grid-cols-1">
             
-                <div className=" px-4 text-justify mr-16 mt-8">
+                <div className=" px-4 text-justify mr-16">
                     <span className=" font-bold text-xl text-gray-600">Learn why is it worth it</span>
-                    <h3 className="text-4xl text-justify text-thin my-4 mt-8"><span className="text-red-300 font-bold"> Medicare</span> Immediate Care Facilities Provide Quick Care and Relief</h3>
+                    <h3 className="text-4xl text-justify text-thin my-4 mt-2"><span className="text-red-300 font-bold"> Medicare</span> Immediate Care Facilities Provide Quick Care and Relief</h3>
                    
-                    <p className="my-4 text-gray-600 text-justify mt-8">No appointment needed, most patients are seen, treated and released in about 60 minutes. Certified and experienced MD physicians not nurses and on site diagnostic tests with lab</p>
+                    <p className="my-4 text-gray-600 text-justify mt-2">No appointment needed, most patients are seen, treated and released in about 60 minutes. Certified and experienced MD physicians not nurses and on site diagnostic tests with lab</p>
 
-                    <div className="mb-4 mt-8">
+                    <div className="mb-4">
                     <Link to="/contact"><button className="text-white text-base bg-blue-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-yellow-400 py-4 px-4 rounded-md">Fix an Appoinment</button></Link>
                     <Link to="/services"><button className="text-white text-base my-2 mx-8 bg-yellow-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-blue-400 py-4 px-4 rounded-md">View Services</button></Link>
                     </div>
                 </div>
-                <div className=" mx-4">
+                <div className=" mx-4 ">
                     <img className="w-full h-100" src="https://image.freepik.com/free-photo/successful-medical-team_329181-9252.jpg" alt=""/>
                 </div>
             </div>
