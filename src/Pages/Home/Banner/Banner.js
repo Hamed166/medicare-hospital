@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressCard, faEnvelope, faLightbulb, faPeopleCarry, faPersonBooth, faPhone, faUserNurse } from '@fortawesome/free-solid-svg-icons';
+import {  faLightbulb, faPhone, faUserNurse } from '@fortawesome/free-solid-svg-icons';
 
 
 const Banner = () => {
@@ -13,13 +13,13 @@ const Banner = () => {
             
                 <div className="grid lg:grid-cols-2 grid-cols-1 my-12">
                 
-                    <div className=" px-4 text-justify mr-16">
+                    <div className=" px-4 text-justify mr-16 mt-8">
                         <span className=" font-bold text-xl text-gray-600">Welcome to Medicenter</span>
-                        <h3 className="text-4xl text-justify font-thin my-2"><span className="text-red-300 font-bold"> Medicare</span> holds the privilage of being Chittagong's first choice hospital to care your family</h3>
+                        <h3 className="text-4xl text-justify text-thin my-4 mt-8"><span className="text-red-300 font-bold"> Medicare</span> holds the privilage of being Chittagong's first choice hospital to care your family</h3>
                        
-                        <p className="my-4 px-4 text-gray-600 text-justify">Since its founding we become an integral part of the city, advancing our mission of providing access to compassionate care to our communities. Today patients find care that combines world-class medicine with compassion.</p>
+                        <p className="my-4 text-gray-600 text-justify mt-4">Since its founding we become an integral part of the city, advancing our mission of providing access to compassionate care to our communities. Today patients find care that combines world-class medicine with compassion.</p>
 
-                        <div className="mb-4">
+                        <div className="mb-4 mt-8">
                         <button className="text-white text-base bg-blue-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-yellow-400 py-4 px-4 rounded-md">Fix an Appoinment</button>
                         <Link to="/services"><button className="text-white text-base my-2 mx-8 bg-yellow-400 hover:bg-green-400  hover:-translate-y-1 hover:scale-110 bg-blue-400 py-4 px-4 rounded-md">View Services</button></Link>
                         </div>
